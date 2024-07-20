@@ -3,39 +3,14 @@ import "../styles/bootstrap.css";
 import "../styles/styles.css";
 
 import imgHeader from "../../public/images/bootstrap-themes.png";
+import service1 from "../../public/images/tramites-migratorios.webp"
+import service2 from "../../public/images/apertura-compañias.jpg"
+import service3 from "../../public/images/impuestos.jpg"
 
 import Navigation from "../components/Navigation.astro";
 import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
 
-const servicios = [
-  "Asilo",
-  "Parol",
-  "Residencia",
-  "Ciudadaía",
-  "Affidavits",
-  "Peticiones familiares",
-  "Permiso de trabajo",
-  "Cambio de drección",
-  "Traducciones",
-  "Pasaporte",
-  "Gestión de citas",
-  "Notarizaciones",
-  "Poderes notariales",
-  "Permisos de viaje",
-  "Acuerdos de compra y venta",
-  "Testamentos",
-  "Redacción de contratos",
-  "Aplicaciones de empleo",
-  "Redacción de resumé",
-  "Aplicaciones de renta",
-  "Impuestos personales y corporativos",
-  "Trámites de compañias",
-  "Bookkeeping",
-  "Aplicaciones de: VPK, After School",
-  "Llenado de formas: W4, W9, W2, 1099...",
-  "Gestión de documentos y certificaciones",
-];
 ---
 
 <html lang="en">
@@ -89,81 +64,66 @@ const servicios = [
 
     <!-- Servicios principales -->
 
-    <div class="container py-5 my-5">
-      <div class="p-5 mb-4 bg-light border rounded-3 shadow-lg row">
-        <div class="container-fluid py-5">
-          <h2>Trámites migratorios</h2>
-          <p>
-            Nuestro servicio de trámites migratorios está diseñado para asistir
-            a individuos y familias en todos los aspectos relacionados con su
-            proceso de emigración o inmigración. Nos encargamos de guiar a
-            nuestros clientes a través de los complicados procesos legales, ya
-            sea para obtener visas de trabajo, residencia permanente, ciudadanía
-            u otros permisos de residencia. Nuestro equipo de expertos en leyes
-            de inmigración se asegurará de que su transición a un nuevo país sea
-            lo más suave y exitosa posible.
-          </p>
-        </div>
-      </div>
-
-      <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-          <div class="h-100 p-5 bg-light border rounded-3 shadow-lg">
-            <h2>Apertura de compñías</h2>
-            <p>
-              Nuestro servicio de apertura de compañías le brinda la asesoría
-              necesaria para establecer su negocio de manera legal y eficiente.
-              Nos encargamos de ayudar a nuestros clientes en la selección del
-              tipo de entidad legal más adecuado para sus necesidades, en la
-              preparación de la documentación necesaria, en el registro ante las
-              autoridades competentes y en la obtención de los permisos
-              requeridos. Ya sea que esté iniciando un nuevo negocio o
-              expandiendo su marca a nivel internacional, nuestro equipo de
-              profesionales se encargará de todos los aspectos legales para
-              establecer su compañía con éxito.
-            </p>
+    <div class="container my-5">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src={service1.src} class="img-fluid rounded-start" alt="...">
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="h-100 p-5 bg-light border rounded-3 shadow-lg">
-            <h2>Impuestos personales y corporativos</h2>
-            <p>
-              Nuestro servicio de impuestos personales y corporativos ofrece
-              asesoría y representación en todos los aspectos relacionados con
-              el cumplimiento tributario tanto a nivel personal como
-              empresarial. Nos encargamos de preparar y presentar declaraciones
-              de impuestos, calcular y minimizar sus obligaciones fiscales,
-              identificar posibles exenciones y deducciones, además de
-              representar a nuestros clientes ante las autoridades fiscales en
-              caso de auditorías o disputas. Nuestro equipo de contadores y
-              expertos en leyes tributarias se asegurará de que sus obligaciones
-              fiscales se cumplan de manera correcta y oportuna, garantizando su
-              tranquilidad financiera.
-            </p>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="fw-bold text-secondary">TRÁMITES MIGRATORIOS</h2>
+              <p class="card-text lead">Nuestro servicio de trámites migratorios está diseñado para asistir
+                a individuos y familias en todos los aspectos relacionados con su
+                proceso de emigración o inmigración. Nos encargamos de guiar a
+                nuestros clientes a través de los complicados procesos legales, ya
+                sea para obtener visas de trabajo, residencia permanente, ciudadanía
+                u otros permisos de residencia. Nuestro equipo de expertos en leyes
+                de inmigración se asegurará de que su transición a un nuevo país sea
+                lo más suave y exitosa posible.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="bg-dark text-secondary px-4 py-5 text-center">
-      <div class="py-5">
-        <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="fs-5 mb-4">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system,
-            extensive prebuilt components, and powerful JavaScript plugins.
-          </p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button
-              type="button"
-              class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
-              >Custom button</button
-            >
-            <button type="button" class="btn btn-outline-light btn-lg px-4"
-              >Secondary</button
-            >
+      <div class="card mb-3">
+        <div class="row g-0 flex-lg-row-reverse">
+          <div class="col-md-4">
+            <img src={service2.src} class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="fw-bold text-secondary">APERTURA DE COMPAÑIAS</h2>
+              <p class="card-text lead">Nuestro servicio de apertura de compañías le brinda la asesoría
+                necesaria para establecer su negocio de manera legal y eficiente.
+                Nos encargamos de ayudar a nuestros clientes en la selección del
+                tipo de entidad legal más adecuado para sus necesidades, en la
+                preparación de la documentación necesaria, en el registro ante las
+                autoridades competentes y en la obtención de los permisos
+                requeridos. Ya sea que esté iniciando un nuevo negocio o
+                expandiendo su marca a nivel internacional, nuestro equipo de
+                profesionales se encargará de todos los aspectos legales para
+                establecer su compañía con éxito.</p>
+            </div>
+          </div>          
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src={service3.src} class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="fw-bold text-secondary">IMPUESTOS PERSONALES Y CORPORATIVOS</h2>
+              <p class="card-text lead">Nuestro servicio de impuestos personales y corporativos ofrece
+                asesoría en todos los aspectos relacionados con
+                el cumplimiento tributario tanto a nivel personal como
+                empresarial. Nos encargamos de preparar y presentar declaraciones
+                de impuestos, calcular y minimizar sus obligaciones fiscales,
+                identificar posibles exenciones y deducciones. Nuestro equipo se asegurará de que sus obligaciones
+                fiscales se cumplan, garantizando su
+                tranquilidad financiera.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -171,24 +131,52 @@ const servicios = [
 
     <!-- todos los servicios -->
 
-    <div class="container px-4 py-5" id="icon-grid">
-      <h2 class="pb-2 border-bottom">Servicios</h2>
-
-      <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-2 py-5"
-      >
-        {
-          servicios.map((data) => (
-            <div class="col d-flex align-items-start mb-3">
-              <div>
-                <p class="mb-0 fs-5 text-secondary">{data}</p>
-              </div>
+    <div class="bg-dark text-secondary">
+      <div class="py-5">
+        <h2 class="fw-bold text-light text-center">NUESTROS SERVICIOS</h2>
+        <div class="row container m-md-5">
+          <div class="col-md-4 col-12 p-3">
+            <div class="border p-4">
+              <p class="mb-2 fs-5 text-light lead">Asilo</p>
+              <p class="mb-2 fs-5 text-light lead">Parol</p>
+              <p class="mb-2 fs-5 text-light lead">Permiso de trabajo</p>
+              <p class="mb-2 fs-5 text-light lead">Cambio de drección</p>
+              <p class="mb-2 fs-5 text-light lead">Poderes notariales</p>
+              <p class="mb-2 fs-5 text-light lead">Permisos de viaje</p>
+              <p class="mb-2 fs-5 text-light lead">Redacción de resumé</p>
+              <p class="mb-2 fs-5 text-light lead">Aplicaciones de renta</p>
+              <p class="mb-2 fs-5 text-light lead">Llenado de formas: W4, W9, W2, 1099...</p>
             </div>
-          ))
-        }
+          </div>
+          <div class="col-md-4 col-12 p-3">
+            <div class="border p-4">
+              <p class="mb-2 fs-5 text-light lead">Residencia</p>
+              <p class="mb-2 fs-5 text-light lead">Ciudadaía</p>
+              <p class="mb-2 fs-5 text-light lead">Traducciones</p>
+              <p class="mb-2 fs-5 text-light lead">Pasaporte</p>
+              <p class="mb-2 fs-5 text-light lead">Acuerdos de compra y venta</p>
+              <p class="mb-2 fs-5 text-light lead">Testamentos</p>
+              <p class="mb-2 fs-5 text-light lead">Impuestos personales y corporativos</p>
+              <p class="mb-2 fs-5 text-light lead">Trámites de compañias</p>
+              <p class="mb-2 fs-5 text-light lead"> .</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 p-3">
+            <div class="border p-4">
+              <p class="mb-2 fs-5 text-light lead">Affidavits</p>
+              <p class="mb-2 fs-5 text-light lead">Peticiones familiares</p>
+              <p class="mb-2 fs-5 text-light lead">Gestión de citas</p>
+              <p class="mb-2 fs-5 text-light lead">Notarizaciones</p>
+              <p class="mb-2 fs-5 text-light lead">Redacción de contratos</p>
+              <p class="mb-2 fs-5 text-light lead">Aplicaciones de empleo</p>
+              <p class="mb-2 fs-5 text-light lead">Bookkeeping</p>
+              <p class="mb-2 fs-5 text-light lead">Aplicaciones de: VPK, After School</p>
+              <p class="mb-2 fs-5 text-light lead">Gestión de documentos y certificaciones</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
 
     <Contact />
 
