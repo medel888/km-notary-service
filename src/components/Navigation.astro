@@ -1,5 +1,6 @@
 ---
-import logo from '../../public/images/logo-4LTM.png'
+import logoDesktop from '../../public/images/logo 4LTM-desktop.png'
+import logoMovil from '../../public/images/logo 4LTM-movil.png'
 ---
 
 <nav class="navbar navbar-light bg-light my-0 py-0">
@@ -32,14 +33,10 @@ import logo from '../../public/images/logo-4LTM.png'
   </div>
 </nav>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid mx-md-3">
-      <div class="col-md-1 col-3 m-1">
-        <img src={logo.src} alt="" class="img-fluid">
-      </div>
-      <a class="navbar-brand fw-bold text-secondary fs-3" href="#">
-        4LegalTax
-      </a>
+      <img src={logoDesktop.src} alt="logo" class="my-2 d-none d-md-block" height="75" width="300">
+      <img src={logoMovil.src} alt="logo" class="my-2 d-md-none" height="50" width="200">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

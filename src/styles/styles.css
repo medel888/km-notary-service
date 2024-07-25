@@ -1,15 +1,10 @@
-.fondo {  
-    background-image: url('/images/fondo.jpg');  
-    background-size: cover;  
-    /* background-position: center; */
-    background-repeat: none;  
-    color: white;  
-} 
-
-.fondo-header{
-    background-color: rgba(0, 0, 0, 0.5);
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('Montserrat-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
 }
 
-.servicios{
-    background-color: rgba(0, 0, 0, 0.5);
+.montserrat{
+    font-family: montserrat-bold;
 }
