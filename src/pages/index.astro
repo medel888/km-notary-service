@@ -5,283 +5,218 @@ import "../styles/styles.css";
 import principalDesktop from "../../public/images/principal-desktop.png";
 import principalMovil from "../../public/images/principal-movil.png";
 import service001 from "../../public/images/service001.png";
-import imgAbaut from "../../public/images/mujer.png";
-import service1 from "../../public/images/tramites-migratorios.webp";
-import service2 from "../../public/images/apertura-compañias.jpg";
-import service3 from "../../public/images/impuestos.jpg";
+import imgAbaut from "../../public/images/abogada.jpg";
 
 import Navigation from "../components/Navigation.astro";
 import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>4LMT</title>
   </head>
   <body>
-    <Navigation />
-
-    <!-- Header -->
-    <header class="container-fluid p-0">
-      <div class="card bg-dark text-white border-0 rounded-0">
-        <img src={principalMovil.src} class="card-img d-md-none" alt="principal"/>
-        <img src={principalDesktop.src} class="card-img d-none d-md-block" alt="principal"/>
-        <div class="card-img-overlay p-md-5 my-5 text-center">
-          <p class="text-white display-2 montserrat">
-            Su tranquilidad es nuestra prioridad
-          </p>
-          <p class="text-white display-5 montserrat">
-            Simplificamos lo complejo para ti
-          </p>
-          <button class="btn btn-lg btn-outline-light my-5">Comenzar</button>
-        </div>
-      </div>
+    <header>
+      <Navigation />
     </header>
 
-    <!-- Servicios principales -->
-    <div class="container">
-      <div class="row my-5 justify-content-center">
-        <col-12 class="col-md-3 p-3">
-          <div
-            class="card bg-light p-3 border border-2 border-warning rounded shadow"
-          >
-            <img
-              src={service001.src}
-              class="card-img-top px-5"
-              alt="servicio"
-            />
-            <div class="card-body text-center">
-              <p class="card-text fs-3 fw-bold text-secondary">
-                TRÁMITES MIGRATORIOS <br/> .
-              </p>
-            </div>
-          </div>
-        </col-12>
-        <col-12 class="col-md-3 p-3">
-          <div
-            class="card bg-light p-3 border border-2 border-warning rounded shadow"
-          >
-            <img
-              src={service001.src}
-              class="card-img-top px-5"
-              alt="servicio"
-            />
-            <div class="card-body text-center">
-              <p class="card-text fs-3 fw-bold text-secondary">
-                APERTURA DE COMPAÑIAS <br/> .
-              </p>
-            </div>
-          </div>
-        </col-12>
-        <col-12 class="col-md-3 p-3">
-          <div
-            class="card bg-light p-3 border border-2 border-warning rounded shadow"
-          >
-            <img
-              src={service001.src}
-              class="card-img-top px-5"
-              alt="servicio"
-            />
-            <div class="card-body text-center">
-              <p class="card-text fs-3 fw-bold text-secondary">
-                IMPUESTOS PERSONALES Y CORPORATIVOS
-              </p>
-            </div>
-          </div>
-        </col-12>
-      </div>
-    </div>
-
-    <!-- Sobre nosotros -->
-
-    <div class="container col-xxl-11 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
+    <main>
+      <!-- Header -->
+      <header class="container-fluid p-0">
+        <div class="card bg-dark text-white border-0 rounded-0">
           <img
-            src={imgAbaut.src}
-            class="d-block mx-lg-auto img-fluid"
-            alt="Bootstrap Themes"
-            width="400"
-            height="200"
-            loading="lazy"
+            src={principalMovil.src}
+            class="card-img d-md-none"
+            alt="principal"
           />
-        </div>
-        <div class="col-lg-6">
-          <h2 class="display-5 fw-bold lh-1 mb-3">
-            Bienvenido a 4Legal & Tax Multiservice LLC
-          </h2>
-          <p class="lead">
-            En 4Legal & Tax Multiservice LLC, nos dedicamos a brindar soluciones
-            legales eficientes y personalizadas para simplificar los trámites
-            legales de nuestros clientes. Con una sólida trayectoria en el
-            sector y un equipo de profesionales altamente calificados,
-            entendemos las complejidades del ámbito legal y trabajamos para
-            facilitar cada proceso.
-          </p>
-          <p class="lead">
-            Nuestra misión es ofrecer un servicio accesible, claro y confiable,
-            permitiendo que nuestros clientes se sientan respaldados en cada
-            etapa de sus gestiones legales. Creemos en la importancia de la
-            transparencia y la comunicación, y nos comprometemos a guiarte a
-            través de cada trámite con el máximo profesionalismo.
-          </p>
-          <p class="lead">
-            Explora nuestros servicios y descubre cómo podemos ayudarte a
-            alcanzar tus objetivos legales de manera rápida y efectiva.
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"
-              >Primary</button
-            >
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4"
-              >Default</button
+          <img
+            src={principalDesktop.src}
+            class="card-img d-none d-md-block"
+            alt="principal"
+          />
+          <div class="card-img-overlay p-md-5 my-5 text-center">
+            <p class="text-white display-2 montserrat">
+              SU TRANQUILIDAD <br /> ES NUESTRA PRIORIDAD
+            </p>
+            <p class="text-white fs-1 montserrat">
+              Simplificamos lo complejo para ti
+            </p>
+            <button class="btn btn-lg btn-outline-light my-5"
+              >AGENDAR CITA</button
             >
           </div>
         </div>
-      </div>
-    </div>
+      </header>
 
-    <!-- Servicios principales -->
-
-    <!-- <div class="container my-5">
-      <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src={service1.src} class="img-fluid rounded-start" alt="..." />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h2 class="fw-bold text-secondary">TRÁMITES MIGRATORIOS</h2>
-              <p class="card-text lead">
-                Nuestro servicio de trámites migratorios está diseñado para
-                asistir a individuos y familias en todos los aspectos
-                relacionados con su proceso de emigración o inmigración. Nos
-                encargamos de guiar a nuestros clientes a través de los
-                complicados procesos legales, ya sea para obtener visas de
-                trabajo, residencia permanente, ciudadanía u otros permisos de
-                residencia. Nuestro equipo de expertos en leyes de inmigración
-                se asegurará de que su transición a un nuevo país sea lo más
-                suave y exitosa posible.
+      <!-- Servicios principales -->
+      <div class="container">
+        <div class="row my-5 justify-content-center">
+          <div
+            class="col-3 d-flex align-items-start border bg-dark m-3 px-3 py-5 rounded-3"
+          >
+            <img
+              src={service001.src}
+              class="m-l-2"
+              alt="service"
+              width="50px"
+              height="50px"
+            />
+            <div class="px-3">
+              <h4 class="fw-bold mb-3 text-first">TRÁMITES MIGRATORIOS</h4>
+              <p class="text-second">
+                Este servicio está diseñado para asistir a individuos y familias
+                en todos los aspectos relacionados con su proceso de emigración
+                o inmigración.
               </p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="card mb-3">
-        <div class="row g-0 flex-lg-row-reverse">
-          <div class="col-md-4">
-            <img src={service2.src} class="img-fluid rounded-start" alt="..." />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h2 class="fw-bold text-secondary">APERTURA DE COMPAÑIAS</h2>
-              <p class="card-text lead">
-                Nuestro servicio de apertura de compañías le brinda la asesoría
-                necesaria para establecer su negocio de manera legal y
-                eficiente. Nos encargamos de ayudar a nuestros clientes en la
-                selección del tipo de entidad legal más adecuado para sus
-                necesidades, en la preparación de la documentación necesaria, en
-                el registro ante las autoridades competentes y en la obtención
-                de los permisos requeridos. Ya sea que esté iniciando un nuevo
-                negocio o expandiendo su marca a nivel internacional, nuestro
-                equipo de profesionales se encargará de todos los aspectos
-                legales para establecer su compañía con éxito.
+          <div
+            class="col-3 d-flex align-items-start border bg-dark m-3 px-3 py-5 rounded-3"
+          >
+            <img
+              src={service001.src}
+              class="m-l-2"
+              alt="service"
+              width="50px"
+              height="50px"
+            />
+            <div class="px-3">
+              <h4 class="fw-bold mb-3 text-first">APERTURA DE COMPAÑIAS</h4>
+              <p class="text-second">
+                Este servicio le brinda la asesoría necesaria, ya sea que esté
+                iniciando un nuevo negocio o expandiendo su marca, de manera
+                legal y eficiente.
               </p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src={service3.src} class="img-fluid rounded-start" alt="..." />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h2 class="fw-bold text-secondary">
+          <div
+            class="col-3 d-flex align-items-start border bg-dark m-3 px-3 py-5 rounded-3"
+          >
+            <img
+              src={service001.src}
+              class="m-l-2"
+              alt="service"
+              width="50px"
+              height="50px"
+            />
+            <div class="px-3">
+              <h4 class="fw-bold mb-3 text-first">
                 IMPUESTOS PERSONALES Y CORPORATIVOS
-              </h2>
-              <p class="card-text lead">
-                Nuestro servicio de impuestos personales y corporativos ofrece
-                asesoría en todos los aspectos relacionados con el cumplimiento
-                tributario tanto a nivel personal como empresarial. Nos
-                encargamos de preparar y presentar declaraciones de impuestos,
-                calcular y minimizar sus obligaciones fiscales, identificar
-                posibles exenciones y deducciones. Nuestro equipo se asegurará
-                de que sus obligaciones fiscales se cumplan, garantizando su
-                tranquilidad financiera.
+              </h4>
+              <p class="text-second">
+                Este ofrece asesoría en todos los aspectos relacionados con el
+                cumplimiento tributario tanto a nivel personal como empresarial.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
 
-    <!-- todos los servicios -->
+      <!-- Sobre nosotros -->
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-3 px-4">
+            <img
+              src={imgAbaut.src}
+              class="img-fluid"
+              alt="abaut"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-7 px-5">
+            <h2 class="display-5 fw-bold lh-1 mb-5 p-0 montserrat">
+              BIENVENIDO A 4LEGAL & TAX MULTISERVICE LLC
+            </h2>
+            <p class="lead">
+              En 4Legal & Tax Multiservice LLC, nos dedicamos a brindar
+              soluciones legales eficientes y personalizadas para simplificar
+              los trámites legales de nuestros clientes. Con una sólida
+              trayectoria en el sector y un equipo de profesionales altamente
+              calificados, entendemos las complejidades del ámbito legal y
+              trabajamos para facilitar cada proceso.
+            </p>
+            <p class="lead">
+              Nuestra misión es ofrecer un servicio accesible, claro y
+              confiable, permitiendo que nuestros clientes se sientan
+              respaldados en cada etapa de sus gestiones legales. Creemos en la
+              importancia de la transparencia y la comunicación, y nos
+              comprometemos a guiarte a través de cada trámite con el máximo
+              profesionalismo.
+            </p>
+            <p class="lead">
+              Explora nuestros servicios y descubre cómo podemos ayudarte a
+              alcanzar tus objetivos legales de manera rápida y efectiva.
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <div class="bg-dark text-secondary">
-      <div class="py-5">
-        <h2 class="fw-bold text-light text-center">NUESTROS SERVICIOS</h2>
-        <div class="row container m-md-5">
-          <div class="col-md-4 col-12 p-3">
-            <div class="border p-4">
-              <p class="mb-2 fs-5 text-light lead">Asilo</p>
-              <p class="mb-2 fs-5 text-light lead">Parol</p>
-              <p class="mb-2 fs-5 text-light lead">Permiso de trabajo</p>
-              <p class="mb-2 fs-5 text-light lead">Cambio de drección</p>
-              <p class="mb-2 fs-5 text-light lead">Poderes notariales</p>
-              <p class="mb-2 fs-5 text-light lead">Permisos de viaje</p>
-              <p class="mb-2 fs-5 text-light lead">Redacción de resumé</p>
-              <p class="mb-2 fs-5 text-light lead">Aplicaciones de renta</p>
-              <p class="mb-2 fs-5 text-light lead">
-                Llenado de formas: W4, W9, W2, 1099...
-              </p>
+      <!-- todos los servicios -->
+      <div class="bg-dark text-secondary">
+        <div class="py-5">
+          <h2 class="fw-bold text-light text-center montserrat fs-1">
+            NUESTROS SERVICIOS
+          </h2>
+          <div class="row justify-content-evenly mx-5">
+            <div class="col-md-4 col-12 p-3">
+              <div class="border p-4">
+                <p class="mb-2 fs-5 text-light lead">Asilo</p>
+                <p class="mb-2 fs-5 text-light lead">Parol</p>
+                <p class="mb-2 fs-5 text-light lead">Permiso de trabajo</p>
+                <p class="mb-2 fs-5 text-light lead">Cambio de drección</p>
+                <p class="mb-2 fs-5 text-light lead">Poderes notariales</p>
+                <p class="mb-2 fs-5 text-light lead">Permisos de viaje</p>
+                <p class="mb-2 fs-5 text-light lead">Redacción de resumé</p>
+                <p class="mb-2 fs-5 text-light lead">Aplicaciones de renta</p>
+                <p class="mb-2 fs-5 text-light lead">
+                  Llenado de formas: W4, W9, W2, 1099...
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4 col-12 p-3">
-            <div class="border p-4">
-              <p class="mb-2 fs-5 text-light lead">Residencia</p>
-              <p class="mb-2 fs-5 text-light lead">Ciudadaía</p>
-              <p class="mb-2 fs-5 text-light lead">Traducciones</p>
-              <p class="mb-2 fs-5 text-light lead">Pasaporte</p>
-              <p class="mb-2 fs-5 text-light lead">
-                Acuerdos de compra y venta
-              </p>
-              <p class="mb-2 fs-5 text-light lead">Testamentos</p>
-              <p class="mb-2 fs-5 text-light lead">
-                Impuestos personales y corporativos
-              </p>
-              <p class="mb-2 fs-5 text-light lead">Trámites de compañias</p>
-              <p class="mb-2 fs-5 text-light lead">.</p>
+            <div class="col-md-4 col-12 p-3">
+              <div class="border p-4 h-100">
+                <p class="mb-2 fs-5 text-light lead">Residencia</p>
+                <p class="mb-2 fs-5 text-light lead">Ciudadaía</p>
+                <p class="mb-2 fs-5 text-light lead">Traducciones</p>
+                <p class="mb-2 fs-5 text-light lead">Pasaporte</p>
+                <p class="mb-2 fs-5 text-light lead">
+                  Acuerdos de compra y venta
+                </p>
+                <p class="mb-2 fs-5 text-light lead">Testamentos</p>
+                <p class="mb-2 fs-5 text-light lead">
+                  Impuestos personales y corporativos
+                </p>
+                <p class="mb-2 fs-5 text-light lead">Trámites de compañias</p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4 col-12 p-3">
-            <div class="border p-4">
-              <p class="mb-2 fs-5 text-light lead">Affidavits</p>
-              <p class="mb-2 fs-5 text-light lead">Peticiones familiares</p>
-              <p class="mb-2 fs-5 text-light lead">Gestión de citas</p>
-              <p class="mb-2 fs-5 text-light lead">Notarizaciones</p>
-              <p class="mb-2 fs-5 text-light lead">Redacción de contratos</p>
-              <p class="mb-2 fs-5 text-light lead">Aplicaciones de empleo</p>
-              <p class="mb-2 fs-5 text-light lead">Bookkeeping</p>
-              <p class="mb-2 fs-5 text-light lead">
-                Aplicaciones de: VPK, After School
-              </p>
-              <p class="mb-2 fs-5 text-light lead">
-                Gestión de documentos y certificaciones
-              </p>
+            <div class="col-md-4 col-12 p-3">
+              <div class="border p-4">
+                <p class="mb-2 fs-5 text-light lead">Affidavits</p>
+                <p class="mb-2 fs-5 text-light lead">Peticiones familiares</p>
+                <p class="mb-2 fs-5 text-light lead">Gestión de citas</p>
+                <p class="mb-2 fs-5 text-light lead">Notarizaciones</p>
+                <p class="mb-2 fs-5 text-light lead">Redacción de contratos</p>
+                <p class="mb-2 fs-5 text-light lead">Aplicaciones de empleo</p>
+                <p class="mb-2 fs-5 text-light lead">Bookkeeping</p>
+                <p class="mb-2 fs-5 text-light lead">
+                  Aplicaciones de: VPK, After School
+                </p>
+                <p class="mb-2 fs-5 text-light lead">
+                  Gestión de documentos y certificaciones
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <Contact />
+      <Contact />
+    </main>
 
     <Footer />
 
