@@ -1,10 +1,9 @@
-@font-face {
-    font-family: 'montserrat-bold';
-    src: url('../../public/Montserrat-Bold.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-.montserrat{
-    font-family: montserrat-bold;
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
