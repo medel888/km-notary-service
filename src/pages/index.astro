@@ -1,7 +1,4 @@
 ---
-import "../styles/bootstrap.css";
-import "../styles/styles.css";
-
 import principalDesktop from "../../public/images/principal-desktop.png";
 import principalMovil from "../../public/images/principal-movil.png";
 import service001 from "../../public/images/service-001.png";
@@ -12,6 +9,10 @@ import imgAbaut from "../../public/images/abogada.jpg";
 import Navigation from "../components/Navigation.astro";
 import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
+
+import "aos/dist/aos.css";
+import "../styles/bootstrap.css";
+import "../styles/styles.css";
 ---
 
 <html lang="es">
@@ -29,7 +30,7 @@ import Footer from "../components/Footer.astro";
 
     <main>
       <!-- Header -->
-      <header class="container-fluid p-0">
+      <header class="container-fluid p-0" id="inicio">
         <div class="card bg-dark text-white border-0 rounded-0">
           <img
             src={principalMovil.src}
@@ -41,15 +42,18 @@ import Footer from "../components/Footer.astro";
             class="card-img d-none d-md-block"
             alt="principal"
           />
-          <div class="card-img-overlay pt-5 px-2 p-md-5 mt-5 my-md-5 text-center">
+          <div
+            class="card-img-overlay pt-5 px-2 p-md-5 mt-5 my-md-5 text-center"
+          >
             <p class="text-white display-3 display-md-2 montserrat-bold">
               SU TRANQUILIDAD <br /> ES NUESTRA PRIORIDAD
             </p>
             <p class="text-white fs-2 fs-md-1 montserrat-bold">
               Simplificamos lo complejo para ti
             </p>
-            <button class="btn btn-lg btn-outline-light my-2 my-md-5"
-              >AGENDAR CITA</button
+            <a
+              href="#contacto"
+              class="btn btn-lg btn-outline-light my-2 my-md-5">AGENDAR CITA</a
             >
           </div>
         </div>
@@ -60,6 +64,7 @@ import Footer from "../components/Footer.astro";
         <div class="row my-5 px-2 px-md-0 justify-content-center">
           <div
             class="col-12 col-md-3 d-flex align-items-start border bg-dark m-3 px-3 py-5 rounded-3"
+            data-aos="fade-up"
           >
             <img
               src={service001.src}
@@ -79,6 +84,7 @@ import Footer from "../components/Footer.astro";
           </div>
           <div
             class="col-12 col-md-3 d-flex align-items-start border bg-dark m-3 px-3 py-5 rounded-3"
+            data-aos="fade-up"
           >
             <img
               src={service002.src}
@@ -98,6 +104,7 @@ import Footer from "../components/Footer.astro";
           </div>
           <div
             class="col-12 col-md-3 d-flex align-items-start border bg-dark m-3 px-3 py-5 rounded-3"
+            data-aos="fade-up"
           >
             <img
               src={service003.src}
@@ -120,7 +127,7 @@ import Footer from "../components/Footer.astro";
       </div>
 
       <!-- Sobre nosotros -->
-      <div class="container my-5">
+      <div class="container my-5 py-5" id="sobreNosotros" data-aos="zoom-in">
         <div class="row justify-content-center">
           <div class="col-12 col-md-3 px-4">
             <img
@@ -130,7 +137,9 @@ import Footer from "../components/Footer.astro";
               loading="lazy"
             />
           </div>
-          <div class="col-12 col-md-7 mt-5 mt-md-0 px-3 px-md-5 text-center text-md-start">
+          <div
+            class="col-12 col-md-7 mt-5 mt-md-0 px-3 px-md-5 text-center text-md-start"
+          >
             <h2 class="display-5 fw-bold lh-1 mb-5 p-0 montserrat-bold">
               BIENVENIDO A 4LEGAL & TAX MULTISERVICE LLC
             </h2>
@@ -159,13 +168,13 @@ import Footer from "../components/Footer.astro";
       </div>
 
       <!-- todos los servicios -->
-      <div class="bg-dark text-secondary">
+      <div class="bg-dark text-secondary" id="servicios">
         <div class="py-5">
           <h2 class="fw-bold text-light text-center montserrat fs-1">
             NUESTROS SERVICIOS
           </h2>
           <div class="row container justify-content-evenly mx-md-5">
-            <div class="col-md-4 col-12 my-3 p-3">
+            <div class="col-md-4 col-12 my-3 p-3" data-aos="fade-right">
               <div class="border p-1 p-md-4">
                 <p class="mb-2 fs-5 text-light lead">Asilo</p>
                 <p class="mb-2 fs-5 text-light lead">Parol</p>
@@ -180,7 +189,7 @@ import Footer from "../components/Footer.astro";
                 </p>
               </div>
             </div>
-            <div class="col-md-4 col-12 my-3 p-3">
+            <div class="col-md-4 col-12 my-3 p-3" data-aos="fade-right">
               <div class="border p-1 p-md-4 h-100">
                 <p class="mb-2 fs-5 text-light lead">Residencia</p>
                 <p class="mb-2 fs-5 text-light lead">Ciudadaía</p>
@@ -196,7 +205,7 @@ import Footer from "../components/Footer.astro";
                 <p class="mb-2 fs-5 text-light lead">Trámites de compañias</p>
               </div>
             </div>
-            <div class="col-md-4 col-12 my-3 p-3">
+            <div class="col-md-4 col-12 my-3 p-3" data-aos="fade-right">
               <div class="border p-1 p-md-4">
                 <p class="mb-2 fs-5 text-light lead">Affidavits</p>
                 <p class="mb-2 fs-5 text-light lead">Peticiones familiares</p>
@@ -227,5 +236,9 @@ import Footer from "../components/Footer.astro";
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
+    <script>
+      import { aosInit } from "../scripts/aos";
+      aosInit();
+    </script>
   </body>
 </html>

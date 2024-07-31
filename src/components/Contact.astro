@@ -1,54 +1,75 @@
 ---
-
+if (Astro.request.method === "POST") {
+  try {
+    const data = await Astro.request.formData();
+    const name = data.get("username");
+    const lastname = data.get("lastname");
+    const email = data.get("email");
+    const phone = data.get("phone");
+    const message = data.get("message");
+    // Do something with the data
+    console.log(name, lastname);
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+}
 ---
 
-<div class="container col-xl-10 col-xxl-8 px-2 px-md-4 py-5">
+<div class="container col-xl-10 col-xxl-8 px-2 px-md-4 py-5" id="contacto">
   <div class="row align-items-center g-lg-5 py-5">
-    <div class="col-lg-7 text-center text-lg-start px-5">
-      <h2 class="display-5 montserrat-bold lh-1 mb-3">¡ESTAMOS AQUÍ PARA AYUDARTE!</h2>
+    <div class="col-lg-7 text-center text-lg-start px-5" data-aos="zoom-in">
+      <h2 class="display-5 montserrat-bold lh-1 mb-3">
+        ¡ESTAMOS AQUÍ PARA AYUDARTE!
+      </h2>
       <p class="col-lg-10 fs-4 lead">
         En nuestra empresa tu confianza es nuestra prioridad. Si tienes alguna
         pregunta, duda o necesitas asesoría, no dudes en contactarnos. Nuestro
         equipo de expertos está listo para brindarte la atención personalizada
         que mereces. Completa el formulario a continuación y nos pondremos en
-        contacto contigo lo antes posible. <br/> ¡Tu tranquilidad legal comienza aquí!
+        contacto contigo lo antes posible. <br /> ¡Tu tranquilidad legal comienza
+        aquí!
       </p>
     </div>
-    <div class="col-md-10 mx-auto col-lg-5">
-      <form class="p-3 p-md-4 border rounded-3 bg-light">
+    <div class="col-md-10 mx-auto col-lg-5" data-aos="zoom-in">
+      <form method="POST" class="p-3 p-md-4 border rounded-3 bg-light">
         <div class="mb-3">
           <input
             id=""
-            name=""
+            name="username"
             type="text"
-            placeholder="First Name"
+            placeholder="Nombre"
             class="form-control"
+            required
           />
         </div>
         <div class="mb-3">
           <input
             id=""
-            name=""
+            name="lastname"
             type="text"
-            placeholder="Last Name"
+            placeholder="Apellido"
             class="form-control"
+            required
           />
         </div>
         <div class="mb-3">
           <input
             id=""
-            name=""
+            name="email"
             type="email"
-            placeholder="Email Address"
+            placeholder="Correo electrónico"
             class="form-control"
+            required
           />
         </div>
         <div class="mb-3">
           <input
             id=""
-            name=""
+            name="phone"
             type="text"
-            placeholder="Phone"
+            placeholder="Teléfono"
             class="form-control"
           />
         </div>
@@ -57,10 +78,11 @@
             class="form-control"
             id="message"
             name="message"
-            placeholder="Enter your massage for us here. We will get back to you within 2 business days."
-            rows="4"></textarea>
+            placeholder="Introduzca aquí su masaje para nosotros. Nos comunicaremos con usted dentro de 2 días hábiles."
+            rows="4"
+            required></textarea>
         </div>
-        <button class="w-100 btn btn-lg btn-first" type="submit">Send</button>
+        <button class="w-100 btn btn-lg btn-first" type="submit">Enviar</button>
       </form>
     </div>
   </div>
