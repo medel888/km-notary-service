@@ -1,0 +1,12 @@
+---
+const { frontmatter } = Astro.props;
+
+import Layout from "./layout.astro";
+---
+
+<Layout title="4LMT">
+  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+  <h1>{frontmatter.title}</h1>
+  <p>{frontmatter.description}</p>
+  <slot />
+</Layout>

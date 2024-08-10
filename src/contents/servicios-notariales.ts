@@ -1,0 +1,23 @@
+export const ServicioNotarialesList: string[] = [
+    "Certificación Notarial de Acuse de Recibo",
+    "Certificación Notarial de Documentos de Adopción",
+    "Certificación Notarial de Declaraciones Juradas",
+    "Certificación Notarial de Préstamos para Compra y Venta de Autos",
+    "Servicios de Copias Certificadas",
+    "Certificación Notarial de Contratos",
+    "Certificación Notarial de Escrituras Públicas",
+    "Certificación Notarial de Demandas de Pagos",
+    "Certificación Notarial de Divorcios",
+    "Trámite de Remoción de Condiciones",
+    "Traducciones y Certificaciones de Documentos Legales",
+    "Certificación Notarial de Autenticidad de Documentos Legales",
+    "Certificaciones Notariales de Documentos Legales",
+    "Certificación Notarial de Contrato de Préstamos",
+    "Certificación de Copias de Pasaportes",
+    "Certificación Notarial de Cartas de Empleo",
+    "Certificación de Poderes Notariales",
+    "Certificación Notarial de Documentos de Propiedad y Retención Temporal",
+    "Certificación Notarial de Testamentos y Fideicomisos",
+    "Servicios de Movilidad por toda la ciudad de Houston",
+    "Otros Trámites."
+]
