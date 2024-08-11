@@ -5,8 +5,27 @@ import Layout from "./layout.astro";
 ---
 
 <Layout title="4LMT">
-  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
-  <h1>{frontmatter.title}</h1>
-  <p>{frontmatter.description}</p>
-  <slot />
+  <main>
+    <div class="p-5  bg-dark">
+      <div class="row justify-content-start">
+        <div class="col-12 col-md-4 mb-5">
+          <img src={frontmatter.image.url} class="img-fluid rounded-circle p-3 border border-first border-2" alt={frontmatter.image.alt} />
+        </div>
+        <div class="col-12 col-md-8 px-md-5">
+          <h3
+            class="display-6 display-md-5 fw-bold lh-1 mb-5 p-0 montserrat-bold text-light"
+          >
+          {frontmatter.title}
+          </h3>
+          <p class="text-light lead fw-bold">{frontmatter.ask}</p> 
+          <div class="text-light lead" style="text-align: justify"><slot /></div>
+        </div>
+      </div>
+      <div class="text-center text-light my-5">
+        <p>Es fundamental considerar que los criterios específicos pueden diferir según la situación particular de cada solicitante.</p>
+        <p>En 4 Legal & Taxes Multi Services te ofrecemos la asistencia que necesitas.</p>
+        <a href="/#contacto" class="btn btn-first text-light fw-bold my-3">PROGRAMAR CITA</a>
+      </div>
+    </div>
+  </main>
 </Layout>

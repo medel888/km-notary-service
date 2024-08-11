@@ -8,50 +8,50 @@ interface ServicioInmigracion {
 export const ServicioInmigracionList: ServicioInmigracion[] = [
     {
         id: 1,
-        name: 'Permiso de trabajo',
+        name: 'PERMISO DE TRABAJO',
         description: '¿Desea obtener un permiso de trabajo en los Estados Unidos? ¡Infórmese aquí!',
-        imgUrl: '/images/inmigracion/001.webp'
+        imgUrl: '/images/inmigracion/permisoDeTrabajo.png'
     },
     {
         id: 2,
-        name: 'Ajuste de Estatus (Residencia Permanente)',
+        name: 'AJUSTE DE ESTATUS (Residencia Permanente)',
         description: 'Todo lo que debe saber para optar por su Ajuste de Status Migratorio.',
-        imgUrl: '/images/inmigracion/001.webp'
+        imgUrl: '/images/inmigracion/ajusteDeEstatus.png'
     },
     {
         id: 3,
-        name: 'Naturalización (Ciudadanía)',
+        name: 'NATURALIZACIÓN (Ciudadanía)',
         description: 'Requisitos generales para su trámite de Naturalización en los Estados Unidos.',
-        imgUrl: '/images/inmigracion/001.webp'
+        imgUrl: '/images/inmigracion/naturalizacion.png'
     },
     {
         id: 4,
-        name: 'Peticiones de Asilo',
+        name: 'PETICIONES DE ASILO',
         description: 'En sus dos Modalidades (Afirmativo y Defensivo)',
-        imgUrl: '/images/inmigracion/001.webp'
+        imgUrl: '/images/inmigracion/peticionesDeAsilo.png'
     },
     {
         id: 5,
-        name: 'Peticiones Familiares',
+        name: 'PETICIONES FAMILIARES',
         description: 'Conozca los detalles y requerimientos para realizar una petición familiar.',
-        imgUrl: '/images/inmigracion/001.webp'
+        imgUrl: '/images/inmigracion/peticonesFamiliares.png'
     },
     {
         id: 6,
-        name: 'Parole Humanitario',
+        name: 'PAROLE HUMANITARIO',
         description: '¿Qué debe tener para optar por el Parole Humanitario?',
-        imgUrl: '/images/inmigracion/001.webp'
+        imgUrl: '/images/inmigracion/paroleHumanitario.png'
     },
     {
         id: 7,
-        name: 'Perdones de Pago (Fee Waiver)',
+        name: 'PERDONES DE PAGO (Fee Waiver)',
         description: 'Información necesaria para la solicitud del perdón de pago.',
-        imgUrl: '/images/inmigracion/001.webp'
+        imgUrl: '/images/inmigracion/perdonesDePago.png'
     },
     {
         id: 8,
-        name: 'Algunos Tipos de Visas',
+        name: 'ALGUNOS TIPOS DE VISAS',
         description: '¿Qué debe tener para obtener una Visa?',
-        imgUrl: '/images/inmigracion/001.webp'
+        imgUrl: '/images/inmigracion/algunosTiposDeVisas.png'
     }
 ];
