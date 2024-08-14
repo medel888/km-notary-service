@@ -16,8 +16,8 @@ export const ServicioNotarialesList: string[] = [
     "Certificación de Copias de Pasaportes",
     "Certificación Notarial de Cartas de Empleo",
     "Certificación de Poderes Notariales",
-    "Certificación Notarial de Documentos de Propiedad y Retención Temporal",
     "Certificación Notarial de Testamentos y Fideicomisos",
+    "Certificación Notarial de Documentos de Propiedad y Retención Temporal",
     "Servicios de Movilidad por toda la ciudad de Houston",
     "Otros Trámites."
 ]
