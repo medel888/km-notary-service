@@ -1,0 +1,51 @@
+---
+import Layout from "../../layouts/layout.astro";
+
+import impuesto from "../../../public/images/impuesto.jpg";
+---
+
+<Layout title="Servicios de impuestos">
+  <main class="bg-dark">
+    <div class="container text-center py-5">
+      <h2 class="display-5 text-light fw-bold lh-1 mb-3 p-0 montserrat-bold">
+        SERVICIOS DE IMPUESTO SOBRE LA RENTA
+      </h2>
+      <p class="montserrat-bold text-light">
+        Contamos con una amplia experiencia en la preparación de impuestos
+        personales y comerciales de manera profesional y precisa.
+      </p>
+      <div class="row d-flex justify-content-center">
+        <div class="col-10">
+          <img src={impuesto.src} alt="impuestos" class="img-fluid my-5" />
+        </div>
+        <div class="col-8">
+          <p class="lead text-light">
+            Procesamos todo de manera electrónica. Queremos que usted, como
+            nuestro cliente, obtenga el mayor reembolso posible, pero al mismo
+            tiempo, nos aseguraremos de que haga las cosas de la manera
+            correcta.
+          </p>
+          <p class="lead text-light">
+            La tranquilidad es el sentimiento más importante que puede tener;
+            por lo tanto, lo guiaremos a través del proceso de impuestos sobre
+            la renta de la manera más éticamente correcta posible. Al hacer las
+            cosas bien, le garantizaremos tranquilidad y, al mismo tiempo,
+            buscaremos y encontraremos el reembolso más alto o el pago más bajo
+            al IRS, para que siempre esté satisfecho.
+          </p>
+          <p class="lead text-light">
+            Sí, también procesamos el número de identificación fiscal para usted
+            y su familia para que pueda hacer su impuesto sobre la renta, abrir
+            una cuenta bancaria, obtener un apartamento a su nombre y muchos
+            otros beneficios que este número puede brindarle.
+          </p>
+        </div>
+      </div>
+      <a
+        href="/#contacto"
+        class="btn btn-lg btn-outline-first border-1 w-md-25 lead my-4"
+        >PROGRAMAR CITA</a
+      >
+    </div>
+  </main>
+</Layout>
