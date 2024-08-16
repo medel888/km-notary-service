@@ -127,12 +127,15 @@ import Contact from "../components/Contact.astro";
           <div class="px-3 p-md-0">
             <p class="lead">
               En 4Legal & Tax Multiservice LLC, nos dedicamos a brindar
-              soluciones legales eficientes y personalizadas para simplificar
-              los trámites legales de nuestros clientes. Con una sólida
-              trayectoria en el sector y un equipo de profesionales altamente
-              calificados, entendemos las complejidades del ámbito legal y
-              trabajamos para facilitar cada proceso.
+              soluciones eficientes y personalizadas para simplificar los
+              trámites migratorios.
             </p>
+            <p class="lead">
+              Con una sólida trayectoria en el sector y un equipo de
+              profesionales altamente calificados, entendemos las complejidades
+              del ámbito legal y trabajamos para facilitar cada proceso.
+            </p>
+
             <p class="lead">
               Nuestra misión es ofrecer un servicio accesible, claro y
               confiable, permitiendo que nuestros clientes se sientan
@@ -149,128 +152,140 @@ import Contact from "../components/Contact.astro";
         </div>
       </div>
     </div>
+  </main>
 
-    <!-- Servicios notariales-->
-    <div class="bg-dark text-secondary" id="servicios-notariales">
-      <div class="py-5">
-        <h2 class="text-light text-center montserrat-bold fs-1" data-aos="zoom-in">
-          SERVICIOS NOTARIALES
-        </h2>
-        <div class="d-flex flex-wrap p-5 px-md-0">
-          {
-            ServicioNotarialesList.map((i) => (
-              <div class="col-12 col-md-6 my-2 ps-md-5" data-aos="zoom-in">
-                <p class="mb-2 fs-5 text-light lead">{i}</p>
-              </div>
-            ))
-          }
-        </div>
-      </div>
-    </div>
-
-    <!-- Servicios inmigración -->
-    <div class="conatiner p-5 text-center" id="servicios-inmigracion">
-      <p class="display-5 fw-bold lh-1 mb-5 p-0 montserrat-bold" data-aos="fade-up">
-        SERVICIOS DE INMIGRACIÓN
-      </p>
-      <div class="row">
+  <!-- Servicios notariales-->
+  <div class="bg-dark text-secondary" id="servicios-notariales">
+    <div class="py-5">
+      <h2
+        class="text-light text-center montserrat-bold fs-1"
+        data-aos="zoom-in"
+      >
+        SERVICIOS NOTARIALES
+      </h2>
+      <div class="d-flex flex-wrap p-5 px-md-0">
         {
-          ServicioInmigracionList.map((i) => (
-            <div class="col-12 col-md-4 col-lg-3 p-md-4 mb-5" data-aos="fade-up">
-              <div class="p-4 rounded shadow bg-dark" style="height: 28rem;">
-                <div class="px-5 py-3">
-                  <img
-                    src={i.imgUrl}
-                    class="img-fluid mb-3 rounded-circle p-2 border border-first border-2"
-                    alt={i.name}
-                  />
-                </div>
-                <div class="text-center p-2">
-                  <h5 class="text-first montserrat-bold mb-3">{i.name}</h5>
-                  <p class="text-light mb-2">{i.description}</p>
-                </div>
-                <a
-                  href={"servicios/inmigracion-" + i.id}
-                  class="text-light fw-bold text-decoration-none"
-                >
-                  Conocer más
-                </a>
-              </div>
+          ServicioNotarialesList.map((i) => (
+            <div class="col-12 col-md-6 my-2 ps-md-5" data-aos="zoom-in">
+              <p class="mb-2 fs-5 text-light lead">{i}</p>
             </div>
           ))
         }
       </div>
     </div>
+  </div>
 
-    <div class="container text-center mb-5" data-aos="fade-up" id="servicios-impuestos">
-      <h2 class="display-5 fw-bold lh-1 mb-3 p-0 montserrat-bold">
-        SERVICIOS DE IMPUESTO SOBRE LA RENTA
+  <!-- Servicios inmigración -->
+  <div class="conatiner p-5 text-center" id="servicios-inmigracion">
+    <p
+      class="display-5 fw-bold lh-1 mb-5 p-0 montserrat-bold"
+      data-aos="fade-up"
+    >
+      SERVICIOS DE INMIGRACIÓN
+    </p>
+    <div class="row">
+      {
+        ServicioInmigracionList.map((i) => (
+          <div class="col-12 col-md-4 col-lg-3 p-md-4 mb-5" data-aos="fade-up">
+            <div class="p-4 rounded shadow bg-dark h-100">
+              <div class="px-5 py-3">
+                <img
+                  src={i.imgUrl}
+                  class="img-fluid mb-3 rounded-circle p-2 border border-first border-2"
+                  alt={i.name}
+                />
+              </div>
+              <div class="text-center p-2">
+                <h5 class="text-first montserrat-bold mb-3">{i.name}</h5>
+                <p class="text-light mb-1">{i.description}</p>
+                <a
+                  href={"servicios/inmigracion-" + i.id}
+                  class="text-first fw-bold text-decoration-none"
+                >
+                  Conocer más
+                </a>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <div
+    class="container text-center mb-5"
+    data-aos="fade-up"
+    id="servicios-impuestos"
+  >
+    <h2 class="display-5 fw-bold lh-1 mb-3 p-0 montserrat-bold">
+      SERVICIOS DE IMPUESTO SOBRE LA RENTA
+    </h2>
+    <p class="montserrat-bold">
+      Contamos con una amplia experiencia en la preparación de impuestos
+      personales y comerciales de manera profesional y precisa.
+    </p>
+    <div class="row d-flex justify-content-center">
+      <div class="col-10 col-md-8">
+        <img src={impuesto.src} alt="impuestos" class="img-fluid my-3" />
+      </div>
+      <div class="col-8">
+        <p class="lead">
+          Somos preparadores de impuestos registrados ante el IRS y estamos al
+          día con toda la información importante relacionada con su impuesto
+          sobre la renta.
+        </p>
+      </div>
+    </div>
+    <a
+      href="servicios/impuestos"
+      class="btn btn-lg btn-outline-first border-1 w-md-25 lead my-4"
+      >Conocer más</a
+    >
+  </div>
+
+  <!-- Otros servicios -->
+  <div class="bg-dark text-secondary mt-5" id="otros-servicios">
+    <div class="py-5">
+      <h2 class="text-light text-center montserrat-bold fs-1">
+        OTROS SERVICIOS
       </h2>
-      <p class="montserrat-bold">
-        Contamos con una amplia experiencia en la preparación de impuestos
-        personales y comerciales de manera profesional y precisa.
-      </p>
-      <div class="row d-flex justify-content-center">
-        <div class="col-10 col-md-8">
-          <img src={impuesto.src} alt="impuestos" class="img-fluid my-3" />
-        </div>
-        <div class="col-8">
-          <p class="lead">
-            Somos preparadores de impuestos registrados ante el IRS y estamos al
-            día con toda la información importante relacionada con su impuesto
-            sobre la renta.
-          </p>
-        </div>
-      </div>
-      <a href="servicios/impuestos" class="btn btn-lg btn-outline-first border-1 w-md-25 lead my-4">Conocer más</a>
-    </div>
-
-    <!-- Otros servicios -->
-    <div class="bg-dark text-secondary mt-5" id="otros-servicios">
-      <div class="py-5">
-        <h2 class="text-light text-center montserrat-bold fs-1">
-          OTROS SERVICIOS
-        </h2>
-        <div class="row container justify-content-evenly mx-md-5">
-          <div class="col-md-4 col-12 my-3 p-3" data-aos="fade-right">
-            <div class="border p-1 p-md-4 h-100">
-              <p class="mb-2 fs-5 text-light lead">Cambio de dirección</p>
-              <p class="mb-2 fs-5 text-light lead">Permisos de viaje</p>
-              <p class="mb-2 fs-5 text-light lead">Redacción de resumé</p>
-              <p class="mb-2 fs-5 text-light lead">
-                Llenado de formas: W4, W9, W2, 1099...
-              </p>
-              <p class="mb-2 fs-5 text-light lead">
-                Aplicaciones de: VPK, After School
-              </p>
-            </div>
+      <div class="row container justify-content-evenly mx-md-5">
+        <div class="col-md-4 col-12 my-3 p-3" data-aos="fade-right">
+          <div class="border p-1 p-md-4 h-100">
+            <p class="mb-2 fs-5 text-light lead">Cambio de dirección</p>
+            <p class="mb-2 fs-5 text-light lead">Permisos de viaje</p>
+            <p class="mb-2 fs-5 text-light lead">Redacción de resumé</p>
+            <p class="mb-2 fs-5 text-light lead">
+              Llenado de formas: W4, W9, W2, 1099...
+            </p>
+            <p class="mb-2 fs-5 text-light lead">
+              Aplicaciones de: VPK, After School
+            </p>
           </div>
-          <div class="col-md-4 col-12 my-3 p-3" data-aos="fade-right">
-            <div class="border p-1 p-md-4 h-100">
-              <p class="mb-2 fs-5 text-light lead">Pasaporte</p>
-              <p class="mb-2 fs-5 text-light lead">
-                Acuerdos de compra y venta
-              </p>
-              <p class="mb-2 fs-5 text-light lead">
-                Impuestos personales y corporativos
-              </p>
-              <p class="mb-2 fs-5 text-light lead">Trámites de compañias</p>
-              <p class="mb-2 fs-5 text-light lead">Seguros de vida y médicos</p>
-            </div>
+        </div>
+        <div class="col-md-4 col-12 my-3 p-3" data-aos="fade-right">
+          <div class="border p-1 p-md-4 h-100">
+            <p class="mb-2 fs-5 text-light lead">Pasaporte</p>
+            <p class="mb-2 fs-5 text-light lead">Acuerdos de compra y venta</p>
+            <p class="mb-2 fs-5 text-light lead">
+              Impuestos personales y corporativos
+            </p>
+            <p class="mb-2 fs-5 text-light lead">Trámites de compañias</p>
+            <p class="mb-2 fs-5 text-light lead">Seguros de vida y médicos</p>
           </div>
-          <div class="col-md-4 col-12 my-3 p-3" data-aos="fade-right">
-            <div class="border p-1 p-md-4 h-100">
-              <p class="mb-2 fs-5 text-light lead">Affidavits</p>
-              <p class="mb-2 fs-5 text-light lead">Gestión de citas</p>
-              <p class="mb-2 fs-5 text-light lead">Redacción de contratos</p>
-              <p class="mb-2 fs-5 text-light lead">Aplicaciones de empleo</p>
-              <p class="mb-2 fs-5 text-light lead">Bookkeeping</p>
-            </div>
+        </div>
+        <div class="col-md-4 col-12 my-3 p-3" data-aos="fade-right">
+          <div class="border p-1 p-md-4 h-100">
+            <p class="mb-2 fs-5 text-light lead">Affidavits</p>
+            <p class="mb-2 fs-5 text-light lead">Gestión de citas</p>
+            <p class="mb-2 fs-5 text-light lead">Redacción de contratos</p>
+            <p class="mb-2 fs-5 text-light lead">Aplicaciones de empleo</p>
+            <p class="mb-2 fs-5 text-light lead">Bookkeeping</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <Contact />
-  </main>
+  <Contact />
 </Layout>
