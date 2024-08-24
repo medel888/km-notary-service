@@ -15,7 +15,7 @@ export const ServicioInmigracionList: ServicioInmigracion[] = [
     {
         id: 2,
         name: 'AJUSTE DE ESTATUS (Residencia Permanente)',
-        description: 'Todo lo que debe saber para optar por su Ajuste de Status Migratorio.',
+        description: 'Todo lo que debe saber para optar por su Ajuste de Estatus Migratorio.',
         imgUrl: '/images/inmigracion/ajusteDeEstatus.png'
     },
     {
