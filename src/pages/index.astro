@@ -7,7 +7,7 @@ import principalMovil from "../../public/images/principal-movil.png";
 import service001 from "../../public/images/service-001.png";
 import service002 from "../../public/images/service-002.png";
 import service003 from "../../public/images/service-003.png";
-import abaut from "../../public/images/abaut.png";
+import abaut from "../../public/images/abaut.jpg";
 import impuesto from "../../public/images/impuesto.jpg";
 
 import Layout from "../layouts/layout.astro";
@@ -50,7 +50,7 @@ import Contact from "../components/Contact.astro";
     <div class="container-lg my-5 py-md-5">
       <div class="row px-2 px-md-0 justify-content-center">
         <div
-          class="col-12 col-md-3 d-flex align-items-start border bg-dark m-3 px-3 py-5 rounded-3"
+          class="col-12 col-md-4 d-flex align-items-start border bg-dark m-4 px-3 py-5 rounded-3"
           data-aos="fade-up"
         >
           <img
@@ -69,7 +69,7 @@ import Contact from "../components/Contact.astro";
           </div>
         </div>
         <div
-          class="col-12 col-md-3 d-flex align-items-start border bg-dark m-3 px-3 py-5 rounded-3"
+          class="col-12 col-md-4 d-flex align-items-start border bg-dark m-4 px-3 py-5 rounded-3"
           data-aos="fade-up"
         >
           <img
@@ -89,7 +89,7 @@ import Contact from "../components/Contact.astro";
           </div>
         </div>
         <div
-          class="col-12 col-md-3 d-flex align-items-start border bg-dark m-3 px-3 py-5 rounded-3"
+          class="col-12 col-md-4 d-flex align-items-start border bg-dark m-4 px-3 py-5 rounded-3"
           data-aos="fade-up"
         >
           <img
@@ -109,12 +109,32 @@ import Contact from "../components/Contact.astro";
             </p>
           </div>
         </div>
+        <div
+          class="col-12 col-md-4 d-flex align-items-start border bg-dark m-4 px-3 py-5 rounded-3"
+          data-aos="fade-up"
+        >
+          <img
+            src={service003.src}
+            class="m-l-2"
+            alt="service"
+            width="50px"
+            height="50px"
+          />
+          <div class="px-3">
+            <h4 class="fw-bold mb-3 text-first">SEGUROS DE VIDA Y MÉDICOS</h4>
+            <p class="text-second">
+              Recibirás una asesoría completa y personalizada para escoger el
+              plan que en este momento sea mejor para ti, segun tus
+              preferencias, necesidades y presupuesto.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Sobre nosotros -->
-    <div class="container my-5 py-5" id="sobreNosotros" data-aos="zoom-in">
-      <div class="row justify-content-center">
+    <div class="container my-5 py-5" id="sobreNosotros">
+      <div class="row justify-content-center" data-aos="zoom-in">
         <div class="col-12 col-md-3 px-4">
           <img src={abaut.src} class="img-fluid" alt="abaut" loading="lazy" />
         </div>
@@ -212,19 +232,18 @@ import Contact from "../components/Contact.astro";
     </div>
   </div>
 
-  <div
-    class="container text-center mb-5"
-    data-aos="fade-up"
-    id="servicios-impuestos"
-  >
-    <h2 class="display-5 fw-bold lh-1 mb-3 p-0 montserrat-bold">
-      SERVICIOS DE IMPUESTO SOBRE LA RENTA
+  <div class="container text-center my-5" id="servicios-impuestos">
+    <h2
+      class="display-5 fw-bold lh-1 mb-3 p-0 montserrat-bold"
+      data-aos="fade-up"
+    >
+      IMPUESTO SOBRE LA RENTA
     </h2>
-    <p class="montserrat-bold">
+    <p class="montserrat-bold" data-aos="fade-up">
       Contamos con una amplia experiencia en la preparación de impuestos
       personales y comerciales de manera profesional y precisa.
     </p>
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center" data-aos="fade-up">
       <div class="col-10 col-md-8">
         <img src={impuesto.src} alt="impuestos" class="img-fluid my-3" />
       </div>
