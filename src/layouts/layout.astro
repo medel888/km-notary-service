@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from "astro:transitions";
 
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
@@ -19,16 +19,23 @@ const { title } = Astro.props;
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta
+      name="description"
+      content="Ofrecemos asesoría integral en trámites migratorios, apertura de compañías, y gestión de impuestos personales y corporativos. Nuestros servicios incluyen seguros de vida y médicos, asesoría notarial, certificaciones, traducciones y declaración de impuesto sobre la renta. Estamos comprometido a facilitar tu proceso y asegurarte el cumplimiento legal en cada etapa. ¡Contáctanos para recibir un servicio personalizado y eficaz!"
+    />
+    <meta
+      name="keywords"
+      content="Asesoría migratoria, Trámites migratorios, Apertura de compañías, Impuestos personales, Impuestos corporativos, Seguros de vida, Seguros médicos, Servicios notariales, Certificaciones, Traducción de documentos, Impuesto sobre la renta, Consultoría legal, Asesoría fiscal"
+    />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
   </head>
   <body>
     <header>
-        <Navigation />
+      <Navigation />
     </header>
     <slot />
     <Footer />
