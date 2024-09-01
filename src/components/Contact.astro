@@ -1,20 +1,5 @@
 ---
-/* if (Astro.request.method === "POST") {
-  try {
-    const data = await Astro.request.formData();
-    const name = data.get("username");
-    const lastname = data.get("lastname");
-    const email = data.get("email");
-    const phone = data.get("phone");
-    const message = data.get("message");
-    // Do something with the data
-    console.log(name, lastname);
-  } catch (error) {
-    if (error instanceof Error) {
-      console.error(error.message);
-    }
-  }
-} */
+
 ---
 
 <div class="container col-xl-10 col-xxl-8 px-2 px-md-4 py-5" id="contacto">
@@ -87,7 +72,7 @@
             required></textarea>
         </div>
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://km-notary-service.onrender.com/">
+        <input type="hidden" name="_next" value="https://4legaltax.com//">
         <button class="w-100 btn btn-lg btn-first" type="submit">Enviar</button>
       </form>
     </div>
