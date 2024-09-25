@@ -1,6 +1,9 @@
 ---
-import { ServicioNotarialesList } from "../contents/servicios-notariales";
-import { ServicioInmigracionList } from "../contents/servicios-inmigración";
+import Layout from "../layouts/layout.astro";
+import Contact from "../components/Contact.astro";
+
+import { ServicioNotarialesList } from "../content/servicios-notariales";
+import { immigrationServiceList } from "../content/immigration_services";
 
 import principalDesktop from "../../public/images/principal-desktop.png";
 import principalMovil from "../../public/images/principal-movil.png";
@@ -10,9 +13,6 @@ import service003 from "../../public/images/service-003.png";
 import service004 from "../../public/images/service-004.png";
 import abaut from "../../public/images/abaut.png";
 import impuesto from "../../public/images/impuesto.jpg";
-
-import Layout from "../layouts/layout.astro";
-import Contact from "../components/Contact.astro";
 ---
 
 <Layout title="4LEGALTAX">
@@ -206,7 +206,7 @@ import Contact from "../components/Contact.astro";
     </p>
     <div class="row">
       {
-        ServicioInmigracionList.map((i) => (
+        immigrationServiceList.map((i) => (
           <div class="col-12 col-md-4 col-lg-3 p-md-4 mb-5" data-aos="fade-up">
             <div class="p-4 rounded shadow bg-dark h-100">
               <div class="px-5 py-3">
@@ -216,11 +216,11 @@ import Contact from "../components/Contact.astro";
                   alt={i.name}
                 />
               </div>
-              <div class="text-center p-2">
+              <div class="text-center p-1">
                 <h5 class="text-first montserrat-bold mb-3">{i.name}</h5>
-                <p class="text-light mb-1">{i.description}</p>
+                <p class="text-light mb-1">{i.ask}</p>
                 <a
-                  href={"servicios/inmigracion-" + i.id}
+                  href={"services/" + i.name}
                   class="text-first fw-bold text-decoration-none"
                 >
                   Conocer más
@@ -257,7 +257,7 @@ import Contact from "../components/Contact.astro";
       </div>
     </div>
     <a
-      href="servicios/impuestos"
+      href="services/impuestos"
       class="btn btn-lg btn-outline-first border-1 w-md-25 lead my-4"
       >Conocer más</a
     >
@@ -308,4 +308,5 @@ import Contact from "../components/Contact.astro";
   </div>
 
   <Contact />
+
 </Layout>
