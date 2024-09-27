@@ -8,7 +8,6 @@ export const ServicioNotarialesList: string[] = [
     "Certificación Notarial de Escrituras Públicas",
     "Certificación Notarial de Demandas de Pagos",
     "Certificación Notarial de Divorcios",
-    "Trámite de Remoción de Condiciones",
     "Traducciones y Certificaciones de Documentos Legales",
     "Certificación Notarial de Autenticidad de Documentos Legales",
     "Certificaciones Notariales de Documentos Legales",
@@ -18,6 +17,5 @@ export const ServicioNotarialesList: string[] = [
     "Certificación de Poderes Notariales",
     "Certificación Notarial de Testamentos y Fideicomisos",
     "Certificación Notarial de Documentos de Propiedad y Retención Temporal",
-    "Servicios de Movilidad por toda la ciudad de Houston",
     "Otros Trámites."
 ]
